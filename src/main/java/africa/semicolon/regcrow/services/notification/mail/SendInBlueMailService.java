@@ -20,6 +20,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @Slf4j
 public class SendInBlueMailService implements MailService{
     private final MailConfig mailConfig;
+
     @Override
     public SendMailResponse sendMail(EmailNotificationRequest emailNotificationRequest) {
         RestTemplate restTemplate = new RestTemplate();
